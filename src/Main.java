@@ -7,7 +7,7 @@ public class Main {
         Gra gra=new Gra();
         JFrame frame = new JFrame("Chess");
 
-        frame.setSize(900, 750);
+        frame.setSize(800, 800);
         // Pobranie rozmiaru ekranu
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         // Pobranie rozmiaru ramki
