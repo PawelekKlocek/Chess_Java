@@ -8,6 +8,8 @@ class Piece {
     private int positionY;
     private String color;
 
+
+
     public Piece(String name, int positionX, int positionY, String color) {
         this.name = name;
         this.positionY = positionY;
@@ -42,6 +44,7 @@ public class ChessBoard {
     private JFrame frame;
     public ChessBoard() {
         frame = new JFrame("Chess");
+        frame.setIconImage(Toolkit.getDefaultToolkit().getImage("images/black_king.png"));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
 
@@ -64,7 +67,7 @@ public class ChessBoard {
             bottomPanel.add(label);
         }
         for(int i = 1; i <= 8; i++){
-            JLabel label = new JLabel("  " + Integer.toString(i), SwingConstants.CENTER);
+            JLabel label = new JLabel(" " + i + " ", SwingConstants.CENTER);
             leftPanel.add(label);
         }
 
@@ -95,6 +98,8 @@ public class ChessBoard {
         int x = (screenSize.width - frameSize.width) / 2;
         int y = (screenSize.height - frameSize.height) / 2;
         frame.setLocation(x, y);
+
+
     }
 
     public static void main(String[] args) {
