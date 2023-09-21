@@ -63,8 +63,8 @@ public class ChessBoard {
             JLabel label = new JLabel(Character.toString(c), SwingConstants.CENTER);
             bottomPanel.add(label);
         }
-        for(int i = 0; i <= 8; i++){
-            JLabel label = new JLabel(Integer.toString(i), SwingConstants.CENTER);
+        for(int i = 1; i <= 8; i++){
+            JLabel label = new JLabel("  " + Integer.toString(i), SwingConstants.CENTER);
             leftPanel.add(label);
         }
 
